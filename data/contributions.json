@@ -1,10 +1,10 @@
 {
   "username": "AryaMehr-Nam",
-  "updated_at": "2026-11-13 14:42 UTC",
-  "total": 24,
-  "current_streak": 12,
-  "longest_streak": 12,
-  "active_days": 13,
+  "updated_at": "2026-11-14 13:38 UTC",
+  "total": 25,
+  "current_streak": 13,
+  "longest_streak": 13,
+  "active_days": 14,
   "days": [
     {
       "date": "2025-11-09",
@@ -1853,6 +1853,11 @@
     },
     {
       "date": "2026-11-13",
+      "level": 2,
+      "count": 1
+    },
+    {
+      "date": "2026-11-14",
       "level": 0,
       "count": 0
     }
