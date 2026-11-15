@@ -1,46 +1,11 @@
 {
   "username": "AryaMehr-Nam",
-  "updated_at": "2026-11-14 13:38 UTC",
-  "total": 25,
-  "current_streak": 13,
-  "longest_streak": 13,
-  "active_days": 14,
+  "updated_at": "2026-11-15 14:04 UTC",
+  "total": 26,
+  "current_streak": 14,
+  "longest_streak": 14,
+  "active_days": 15,
   "days": [
-    {
-      "date": "2025-11-09",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-10",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-11",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-12",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-13",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-14",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-15",
-      "level": 0,
-      "count": 0
-    },
     {
       "date": "2025-11-16",
       "level": 0,
@@ -1858,6 +1823,11 @@
     },
     {
       "date": "2026-11-14",
+      "level": 2,
+      "count": 1
+    },
+    {
+      "date": "2026-11-15",
       "level": 0,
       "count": 0
     }
