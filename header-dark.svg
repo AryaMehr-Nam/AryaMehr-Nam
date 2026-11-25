@@ -34,7 +34,7 @@
     <tspan fill="#8b949e" font-weight="600">STACK</tspan><tspan dx="12" fill="#c9d1d9">Python · TypeScript · React 19 · Rust · Laravel · PyTorch</tspan>
   </text>
 
-  <text x="862" y="164" text-anchor="end" class="mono fade" font-size="11.5" fill="#39d353" style="animation-delay:0.15s">9 REPOS · 24D STREAK · 36 COMMITS</text>
+  <text x="862" y="164" text-anchor="end" class="mono fade" font-size="11.5" fill="#39d353" style="animation-delay:0.15s">9 REPOS · 25D STREAK · 39 COMMITS</text>
   <circle cx="874" cy="160" r="3.6" fill="#39d353" class="pulse"/>
 
   <line x1="0" y1="183" x2="880" y2="183" stroke="#21262d" stroke-width="1"/>
