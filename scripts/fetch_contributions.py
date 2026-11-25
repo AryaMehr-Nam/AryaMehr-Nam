@@ -8,9 +8,26 @@ from bs4 import BeautifulSoup
 
 USERNAME = os.environ.get("GITHUB_USERNAME", "AryaMehr-Nam")
 
+
+def fetch_public_repo_count(username: str, default: int = 9) -> int:
+    try:
+        resp = requests.get(
+            f"https://api.github.com/users/{username}",
+            headers={"Accept": "application/vnd.github+json", "User-Agent": "GitHub-Profile-Index"},
+            timeout=10,
+        )
+        if resp.ok:
+            count = resp.json().get("public_repos")
+            if isinstance(count, int) and count > 0:
+                return count
+    except Exception:
+        pass
+    return default
+
+
 def fetch_contributions(username: str = USERNAME, out_path: str = "data/contributions.json"):
     url = f"https://github.com/users/{username}/contributions"
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) GitHub-Profile-Art"}
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) GitHub-Profile-Index"}
     resp = requests.get(url, headers=headers, timeout=25)
     resp.raise_for_status()
 
@@ -55,10 +72,21 @@ def fetch_contributions(username: str = USERNAME, out_path: str = "data/contribu
         elif cur_streak > 0:
             break
 
+    prev_repos = 9
+    if os.path.exists(out_path):
+        try:
+            with open(out_path, "r", encoding="utf-8") as existing:
+                prev_repos = json.load(existing).get("public_repos", 9)
+        except Exception:
+            pass
+
+    public_repos = fetch_public_repo_count(username, default=prev_repos)
+
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     payload = {
         "username": username,
         "updated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "public_repos": public_repos,
         "total": total,
         "current_streak": cur_streak,
         "longest_streak": max_streak,
@@ -67,8 +95,9 @@ def fetch_contributions(username: str = USERNAME, out_path: str = "data/contribu
     }
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
-    print(f"[ok] Scraped {len(days)} days ({total} contributions) for '{username}' -> {out_path}")
+    print(f"[ok] Scraped {len(days)} days ({total} contributions, {public_repos} repos) -> {out_path}")
     return payload
+
 
 if __name__ == "__main__":
     user = sys.argv[1] if len(sys.argv) > 1 else USERNAME

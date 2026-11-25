@@ -1,56 +1,62 @@
 <div align="center">
 
-<!-- ========================================== -->
-<!-- 1. LIVE TELEMETRY HEATMAP                  -->
-<!-- Auto-refreshed daily by GitHub Actions     -->
-<!-- ========================================== -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./header-light.svg">
+  <img src="./header-dark.svg" width="880" alt="AryaMehr Namdary — Systems & Security Architect">
+</picture>
 
-<h3><code>aryamehr@github ~ $ ./telemetry-heatmap.sh</code></h3>
+</div>
 
-<img src="./contrib-heatmap.svg" width="868" alt="AryaMehr's GitHub Contribution Heatmap" />
+#### `02 //` SELECTED SYSTEMS &amp; BENCHMARKS
 
-<br>
-<br>
+| System | Architecture & Scope | Verified Proof |
+| :--- | :--- | :--- |
+| **[SentinelX-Platform](https://github.com/AryaMehr-Nam/SentinelX-Platform)** | Async ASGI WAF engine, multi-provider AI threat analysis, React 19 SOC dashboard & Manifest V3 extension (`SecureLens`) | **CI + Trivy** · 25 Tests |
+| **[agent-redline](https://github.com/AryaMehr-Nam/agent-redline)** | Deterministic zero-dependency AST pre-tool firewall & prompt-injection guard for Antigravity, Claude Code, Cursor & Codex | **100% Recall** · 0.82ms |
+| **[Autonomous-Trading-Framework](https://github.com/AryaMehr-Nam/Autonomous-Trading-Framework)** | Multi-market quant framework combining Transformers, XGBoost, Deep RL, FinBERT news sentiment & MT5 execution | **+19.45%** · Sharpe 9.24 |
+| **[laravel-spec-skill](https://github.com/AryaMehr-Nam/laravel-spec-skill)** | Spec-driven Agent Skill turning plain-language requirements into validated JSON specs & TDD builds for Laravel 11/12 + Filament | **29 Spec Rules** · CI Pass |
+| **[Aether-Tray](https://github.com/AryaMehr-Nam/Aether-Tray)** | Native cross-platform Rust system tray client for Cloudflare WARP (`Aether`) over local SOCKS5 with zero privilege escalation | **Rust** · Win / macOS / Linux |
 
-<!-- ========================================== -->
-<!-- 2. DUAL-PANE TERMINAL INTERFACE           -->
-<!-- Left: Self-typing ASCII Portrait           -->
-<!-- Right: Fastfetch / Neofetch Info Card      -->
-<!-- ========================================== -->
-
-<h3><code>aryamehr@github ~ $ whoami</code></h3>
+#### `03 //` INTERFACE ARTIFACTS
 
 <table>
   <tr>
-    <td valign="top">
-      <img src="./ascii-portrait.svg" width="370" alt="AryaMehr Namdary - ASCII Portrait" />
+    <td width="33%" align="center">
+      <a href="https://github.com/AryaMehr-Nam/SentinelX-Platform">
+        <img src="https://raw.githubusercontent.com/AryaMehr-Nam/SentinelX-Platform/main/docs/screenshots/dashboard_overview.png" width="280" alt="SentinelX SOC Dashboard" />
+      </a><br />
+      <sub><b>SentinelX</b> — Real-Time WAF &amp; SOC</sub>
     </td>
-    <td valign="top">
-      <img src="./info-card.svg" width="490" alt="System Specification - Neofetch" />
+    <td width="33%" align="center">
+      <a href="https://github.com/AryaMehr-Nam/agent-redline">
+        <img src="https://raw.githubusercontent.com/AryaMehr-Nam/agent-redline/main/benchmark.png" width="280" alt="agent-redline Benchmark Scorecard" />
+      </a><br />
+      <sub><b>agent-redline</b> — 335-Cmd Eval</sub>
+    </td>
+    <td width="33%" align="center">
+      <a href="https://github.com/AryaMehr-Nam/laravel-spec-skill">
+        <img src="https://raw.githubusercontent.com/AryaMehr-Nam/laravel-spec-skill/master/demo.gif" width="280" alt="laravel-spec-skill Workflow Demo" />
+      </a><br />
+      <sub><b>laravel-spec-skill</b> — Spec Engine</sub>
     </td>
   </tr>
 </table>
 
+<details>
+<summary><code>04 //</code> Additional Utilities &amp; Research</summary>
+
 <br>
-<br>
 
-<!-- ========================================== -->
-<!-- 3. CONNECT & REPOSITORIES                  -->
-<!-- ========================================== -->
+- **[Arya-MultiThread-Downloader](https://github.com/AryaMehr-Nam/Arya-MultiThread-Downloader)** — Segmented multi-threaded HTTP download manager with dynamic chunk stitching and live bandwidth telemetry (`Python` · `Tkinter`).
+- **[Sample-DirBuster](https://github.com/AryaMehr-Nam/Sample-DirBuster)** — Concurrent web directory and file reconnaissance scanner with status filtering (`Python` · `Security`).
+- **[Virtual-Webcam-Mouse](https://github.com/AryaMehr-Nam/Virtual-Webcam-Mouse)** — Real-time hand-gesture cursor control pipeline (`MediaPipe` · `OpenCV`).
+- **Academic R&amp;D:** Solar UAV Modeling &amp; Biomimetics @ Sharif University of Technology (`SUT`).
 
-<h3><code>aryamehr@github ~ $ ./links.sh</code></h3>
+</details>
 
-<p>
-  <b>Full-Stack Software Architect · Computer & Aerospace Engineering @ Sharif University of Technology</b>
+---
+
+<p align="center">
+  <sub><b>R&amp;D:</b> Solar UAV Modeling &amp; Biomimetics @ SUT &nbsp;·&nbsp; <b>Contact:</b> <a href="mailto:darklegend1380@gmail.com">darklegend1380@gmail.com</a> &nbsp;·&nbsp; <b>GitHub:</b> <a href="https://github.com/AryaMehr-Nam">AryaMehr-Nam</a></sub>
 </p>
-
-<p>
-  <a href="mailto:darklegend1380@gmail.com"><img src="https://img.shields.io/badge/Email-darklegend1380%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
-  <a href="https://github.com/AryaMehr-Nam"><img src="https://img.shields.io/badge/GitHub-AryaMehr--Nam-161b22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <img src="https://img.shields.io/badge/Stack-Laravel%20%7C%20Vue%203%20%7C%20Django-0d1117?style=for-the-badge&logo=laravel&logoColor=FF2D20" alt="Stack" />
-  <img src="https://img.shields.io/badge/Focus-UAV%20Modeling%20%26%20Robotics-0d1117?style=for-the-badge&logo=scipy&logoColor=8CAAE6" alt="Focus" />
-</p>
-
-<br>
-
-</div>

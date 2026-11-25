@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  heatmap:
+  telemetry:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,18 +21,18 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests==2.32.3 beautifulsoup4==4.12.3
+        run: pip install -r scripts/requirements.txt
 
       - name: Fetch live contributions
         run: python scripts/fetch_contributions.py
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
-      - name: Render telemetry heatmap
-        run: python scripts/render_heatmap_svg.py
+      - name: Render adaptive editorial headers
+        run: python scripts/render_editorial_header.py
 
-      - name: Commit updated art
+      - name: Commit updated telemetry
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh contribution telemetry [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          file_pattern: "data/contributions.json header-dark.svg header-light.svg"
