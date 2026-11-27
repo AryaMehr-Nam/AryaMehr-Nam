@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 82" width="416" height="82">
+  <defs>
+    <linearGradient id="cScan" x1="-0.5" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+      <animate attributeName="x1" from="-0.5" to="1.3" dur="3.0s" repeatCount="indefinite"/>
+      <animate attributeName="x2" from="0" to="1.8" dur="3.0s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="416" height="82" rx="8" fill="#0b1022" stroke="#1e293b" stroke-width="1.2"/>
+  <line x1="0" y1="1.5" x2="416" y2="1.5" stroke="url(#cScan)" stroke-width="2"/>
+  <circle cx="16" cy="24" r="3.6" fill="#22d3ee">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="27" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#f8fafc">CodeAtlas</text>
+  <rect x="260" y="13" width="142" height="20" rx="10" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.55"/>
+  <text x="331" y="27" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#22d3ee">AST · 60fps Canvas</text>
+  <text x="16" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#94a3b8">Polyglot Tree-sitter dependency mapper &amp; blast-radius studio</text>
+  <!-- Bottom signal pulse bar -->
+  <rect x="16" y="68" width="384" height="2.5" rx="1.2" fill="#162238"/>
+  <rect x="16" y="68" width="76" height="2.5" rx="1.2" fill="#22d3ee">
+    <animate attributeName="x" values="16;324;16" dur="3.6s" repeatCount="indefinite"/>
+  </rect>
+</svg>

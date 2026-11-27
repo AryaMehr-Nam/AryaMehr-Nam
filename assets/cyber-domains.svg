@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 148" width="880" height="148">
+  <defs>
+    <filter id="dGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="sweep" x1="-1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animate attributeName="x1" from="-1" to="2" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="x2" from="0" to="3" dur="3.2s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="148" fill="#0d1117"/>
+
+  <!-- Top Hub Label -->
+  <rect x="330" y="2" width="220" height="20" rx="10" fill="#0b1022" stroke="#312e81"/>
+  <text x="440" y="15" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#a78bfa">CORE // ENGINEERING MATRIX</text>
+
+  <!-- Circuit Traces -->
+  <path id="tr1" d="M 440 22 L 440 34 L 104 34 L 104 48" fill="none" stroke="#1e3a5f" stroke-width="1.5"/>
+  <path id="tr2" d="M 440 22 L 440 34 L 328 34 L 328 48" fill="none" stroke="#4c1d4b" stroke-width="1.5"/>
+  <path id="tr3" d="M 440 22 L 440 34 L 552 34 L 552 48" fill="none" stroke="#2d1f47" stroke-width="1.5"/>
+  <path id="tr4" d="M 440 22 L 440 34 L 776 34 L 776 48" fill="none" stroke="#133d2e" stroke-width="1.5"/>
+
+  <!-- Moving Packets -->
+  <circle r="3.3" fill="#22d3ee" filter="url(#dGlow)"><animateMotion dur="1.9s" repeatCount="indefinite"><mpath href="#tr1"/></animateMotion></circle>
+  <circle r="3.3" fill="#ec4899" filter="url(#dGlow)"><animateMotion dur="1.6s" repeatCount="indefinite" begin="0.3s"><mpath href="#tr2"/></animateMotion></circle>
+  <circle r="3.3" fill="#a78bfa" filter="url(#dGlow)"><animateMotion dur="1.8s" repeatCount="indefinite" begin="0.6s"><mpath href="#tr3"/></animateMotion></circle>
+  <circle r="3.3" fill="#34d399" filter="url(#dGlow)"><animateMotion dur="2.1s" repeatCount="indefinite" begin="0.9s"><mpath href="#tr4"/></animateMotion></circle>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="0" y="48" width="208" height="96" rx="10" fill="#0b1022" stroke="#1e3a5f" stroke-width="1.2"/>
+    <rect x="0" y="48" width="208" height="3" rx="1.5" fill="#22d3ee"/>
+    <rect x="0" y="48" width="208" height="3" rx="1.5" fill="url(#sweep)"/>
+    <text x="14" y="72" font-size="10.5" font-weight="700" fill="#22d3ee">01 // AGENT SECURITY</text>
+    <text x="14" y="96" font-size="12.5" font-weight="700" fill="#f8fafc">mcp-guard · redline</text>
+    <text x="14" y="116" font-size="10.5" fill="#94a3b8">8-layer MCP proxy</text>
+    <text x="14" y="132" font-size="10.5" fill="#94a3b8">100% recall AST hooks</text>
+
+    <rect x="224" y="48" width="208" height="96" rx="10" fill="#0b1022" stroke="#4c1d4b" stroke-width="1.2"/>
+    <rect x="224" y="48" width="208" height="3" rx="1.5" fill="#ec4899"/>
+    <rect x="224" y="48" width="208" height="3" rx="1.5" fill="url(#sweep)"/>
+    <text x="238" y="72" font-size="10.5" font-weight="700" fill="#ec4899">02 // X-RAY &amp; AST STUDIOS</text>
+    <text x="238" y="96" font-size="12.5" font-weight="700" fill="#f8fafc">CodeAtlas · A11yPilot</text>
+    <text x="238" y="116" font-size="10.5" fill="#94a3b8">Tree-sitter + 60fps UIA</text>
+    <text x="238" y="132" font-size="10.5" fill="#94a3b8">laravel-spec-skill</text>
+
+    <rect x="448" y="48" width="208" height="96" rx="10" fill="#0b1022" stroke="#2d1f47" stroke-width="1.2"/>
+    <rect x="448" y="48" width="208" height="3" rx="1.5" fill="#a78bfa"/>
+    <rect x="448" y="48" width="208" height="3" rx="1.5" fill="url(#sweep)"/>
+    <text x="462" y="72" font-size="10.5" font-weight="700" fill="#a78bfa">03 // APPSEC &amp; WAF</text>
+    <text x="462" y="96" font-size="12.5" font-weight="700" fill="#f8fafc">SentinelX-Platform</text>
+    <text x="462" y="116" font-size="10.5" fill="#94a3b8">Async WAF · React 19 UI</text>
+    <text x="462" y="132" font-size="10.5" fill="#94a3b8">Chrome MV3 SecureLens</text>
+
+    <rect x="672" y="48" width="208" height="96" rx="10" fill="#0b1022" stroke="#133d2e" stroke-width="1.2"/>
+    <rect x="672" y="48" width="208" height="3" rx="1.5" fill="#34d399"/>
+    <rect x="672" y="48" width="208" height="3" rx="1.5" fill="url(#sweep)"/>
+    <text x="686" y="72" font-size="10.5" font-weight="700" fill="#34d399">04 // QUANT ML &amp; RUST</text>
+    <text x="686" y="96" font-size="12.5" font-weight="700" fill="#f8fafc">TradeAgent · Aether</text>
+    <text x="686" y="116" font-size="10.5" fill="#94a3b8">PyTorch DRL · FinBERT</text>
+    <text x="686" y="132" font-size="10.5" fill="#94a3b8">Rust SOCKS5 · Solar UAV</text>
+  </g>
+</svg>

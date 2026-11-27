@@ -28,11 +28,11 @@ jobs:
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
-      - name: Render adaptive editorial headers
-        run: python scripts/render_editorial_header.py
+      - name: Render cyber motion graphics
+        run: python scripts/render_cyber_motion.py
 
-      - name: Commit updated telemetry
+      - name: Commit updated motion telemetry
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh contribution telemetry [skip ci]"
-          file_pattern: "data/contributions.json header-dark.svg header-light.svg"
+          file_pattern: "data/contributions.json assets/"
